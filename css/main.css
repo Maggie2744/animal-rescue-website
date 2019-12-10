@@ -19,6 +19,11 @@ html {
   padding-right: 1em;
 }
 
+header {
+  height: 70px;
+  background-color: #1a4b11;
+}
+
 nav {
   background-color: #1a4b11;
 }
@@ -35,6 +40,21 @@ nav .current {
 
 .nav {
   display: none;
+  background-color: #4aa034;
+}
+
+.nav-label {
+  cursor: pointer;
+  font-size: 1.25rem;
+  padding-bottom: 3.5em;
+}
+
+.nav-check:checked ~ .nav {
+  display: block;
+}
+
+.navigation {
+  position: relative;
 }
 
 .nav-check {
@@ -42,13 +62,8 @@ nav .current {
   top: -3em;
 }
 
-.nav-label {
-  cursor: pointer;
-  font-size: 1.25rem;
-}
+.nav-check:checked ~ .nav-label {
 
-.nav-check:checked ~ .nav {
-  display: block;
 }
 
 /** End of Toggle Nav Code **/
